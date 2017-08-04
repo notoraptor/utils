@@ -4,21 +4,16 @@ import sys, argparse
 def get_infos_from_header(header, results):
 	sep = '+' * 70
 	prefix = 'ERROR: '
-	start = 0
-	header_len = len(header)
 	start_header = 0
-	if results and results[0] is header:
-		start += 1
-	for i in range(start, len(results)):
-		result = results[i]
-		for line in result:
+	for i in range((1 if results and results[0] is header else 0), len(results)):
+		for line in results[i]:
 			if line:
 				if line.startswith(prefix):
 					result_id = line[len(prefix):]
 					if result_id:
 						header_infos = []
 						count = 0
-						for j in range(start_header, header_len):
+						for j in range(start_header, len(header)):
 							count += 1
 							header_line = header[j]
 							if header_line.startswith(result_id) or header_infos:
@@ -26,14 +21,20 @@ def get_infos_from_header(header, results):
 								if header_line.endswith(prefix[:-2]):
 									break
 						if header_infos:
-							results[i] = header_infos + [sep] + result
+							results[i] = header_infos + [sep] + results[i]
 						start_header += count
 				break
 
 def collect(results, include, exclude, outputs):
 	for result in results:
 		result_string = '\n'.join(result)
-		if all(s in result_string for s in include) and not any(s in result_string for s in exclude):
+		if (not include or all(s in result_string for s in include)) and (not exclude or all(s not in result_string for s in exclude)):
+			outputs.append(result_string)
+
+def collect_reverse_logic(results, include, exclude, outputs):
+	for result in results:
+		result_string = '\n'.join(result)
+		if (not exclude or any(s in result_string for s in exclude)) and (not include or any(s not in result_string for s in include)):
 			outputs.append(result_string)
 
 parser = argparse.ArgumentParser()
@@ -45,6 +46,7 @@ parser.add_argument('-f', '--first', action='store_true', default=False, help='P
 parser.add_argument('-F', '--include-first', action='store_true', default=False, help='Consider header (lines before the first error result) as a result too.')
 parser.add_argument('-n', '--no-print', action='store_true', default=False, help='Do not print selected results.')
 parser.add_argument('-l', '--parse-header', action='store_true', default=False, help='Try to get infos from header for every result.')
+parser.add_argument('-r', '--reverse-logic', action='store_true', default=False, help="Inverse logic: include tests that contain any expression in EXCLUDE, and exclude tests that contains all expressions in INCLUDE.")
 
 args = parser.parse_args(sys.argv[1:])
 
@@ -60,7 +62,6 @@ with open(args.filename, 'r') as file:
 			current_lines = []
 		else:
 			current_lines.append(line)
-
 all_results.append(current_lines)
 
 if len(all_results) > 0:
@@ -78,7 +79,10 @@ if header and args.parse_header:
 
 outputs = []
 if args.include or args.exclude:
-	collect(results, args.include, args.exclude, outputs)
+	if args.reverse_logic:
+		collect_reverse_logic(results, args.include, args.exclude, outputs)
+	else:
+		collect(results, args.include, args.exclude, outputs)
 if args.count:
 	len_results = len(results)
 	len_output = len(outputs)
