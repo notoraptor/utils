@@ -1,0 +1,203 @@
+A001	Moved Python 3.* minimum supported version from 3.3 to 3.4.
+A002	Various improvements for Travis CI tests (with better splitting for faster testing)
+A003	Added a wrapper for Baidu's CTC
+A004	Added deprecation warning for the softmax and logsoftmax vector case
+A005	Replaced deprecated package requirement `nose-parameterized` with up-to-date package `parameterized`
+A006	Doc improvements
+A007	Bug fixes
+A008	Crash fixes
+* https://github.com/Theano/Theano/pull/6225	Install c_code/* files for every submodule
+* https://github.com/Theano/Theano/pull/6213	Changed grad to L_op for cholesky and solve ops 
+* https://github.com/Theano/Theano/pull/6199	Fix some problems in the daily buildbot in DEBUG_MODE. 
+* https://github.com/Theano/Theano/pull/6215	Fix the copy for aliased function arguments 
+* https://github.com/Theano/Theano/pull/6182	* Added GpuCublasTriangularSolve and the associated lifter optimizations 
+* https://github.com/Theano/Theano/pull/6194	* Support more debuggers for PdbBreakpoint 
+* https://github.com/Theano/Theano/pull/6190	Update warnings and fix errors 
+* https://github.com/Theano/Theano/pull/6146	* add windows pr tests # cuda.root, cuda.include_path, dnn.base_path, dnn.bin_path
+* https://github.com/Theano/Theano/pull/6201	Fix bug in scan_until shape concatenation 
+* https://github.com/Theano/Theano/pull/6150	* Fix stack trace
+* https://github.com/Theano/Theano/pull/6204	using op params for Reshape ops
+* https://github.com/Theano/Theano/pull/6166	Add DEBUG messages into cuDNN conv codes. 
+* https://github.com/Theano/Theano/pull/6174	Wrap op params for [Gpu]DimShuffle
+* https://github.com/Theano/Theano/pull/6205	Bump c_code_cache_version for GpuGemv to ensure that new builds use the right C code
+* https://github.com/Theano/Theano/pull/6183	Added lifter optimizations for AllocDiag and ExtractDiag 
+* https://github.com/Theano/Theano/pull/6186	Exclude CI files from sdist 
+* https://github.com/Theano/Theano/pull/6203	Forward test value in clone_float32 
+* https://github.com/Theano/Theano/pull/6161	uses inplace as op params for GpuGer, GpuGemm, GpuGemmBatch and GpuGemv 
+* https://github.com/Theano/Theano/pull/6164	Jenkins mac buildbot 
+* https://github.com/Theano/Theano/pull/6050	* Scaled Exponential Linear Unit (SELU) activation 
+* https://github.com/Theano/Theano/pull/6178	Repair tests that fail with compute_test_value
+* https://github.com/Theano/Theano/pull/6180	(small improvement) Remove Python loop from GpuContiguous's C code.
+* https://github.com/Theano/Theano/pull/6173	Fix tests that always expect a C compiler 
+* https://github.com/Theano/Theano/pull/6170	Fix some problems with the GPU 
+* https://github.com/Theano/Theano/pull/6092	* Separable convolutions 
+* https://github.com/Theano/Theano/pull/6163	Small issues fixed
+* https://github.com/Theano/Theano/pull/6171	Fix for GpuAdvancedIndexing 
+* https://github.com/Theano/Theano/pull/6169	Fix strides when using dot inside gemv 
+* https://github.com/Theano/Theano/pull/6165	Docstring improvements 
+* https://github.com/Theano/Theano/pull/5914	* Magma gpu QR/Cholesky/Eigh 
+* https://github.com/Theano/Theano/pull/5775	Correct gradient of scan until
+* https://github.com/Theano/Theano/pull/6147	Fix dnn loading/usage on mac 
+* https://github.com/Theano/Theano/pull/6159	make variable class new style 
+* https://github.com/Theano/Theano/pull/6156	? Added options for `disconnected_outputs` to Rop
+* https://github.com/Theano/Theano/pull/6154	Fix logic for timing / choosing algo in dnn_fwd 
+* https://github.com/Theano/Theano/pull/5991	* Implement Grouped Convolutions 
+* https://github.com/Theano/Theano/pull/6149	pr mac tests 
+* https://github.com/Theano/Theano/pull/6151	Flake8 for test_blas.py 
+* https://github.com/Theano/Theano/pull/6116	~ Use GpuDnnReduction to replace GpuMaxAndArgmax when possible
+* https://github.com/Theano/Theano/pull/6111	Fix alerts found with lgtm 
+* https://github.com/Theano/Theano/pull/6139	Only compare to scipy timing in FAST_RUN
+* https://github.com/Theano/Theano/pull/6097	Make sure MRG uniform in float16 do not return 0 
+* https://github.com/Theano/Theano/pull/6070	~* Implement grad for AbstractBatchNormTrainGrad 
+* https://github.com/Theano/Theano/pull/6148	Add debug code to print algo chosen at runtime for cuDNN convolutions
+* https://github.com/Theano/Theano/pull/6140	Let filter_variable fix broadcast between GPU vars 
+* https://github.com/Theano/Theano/pull/6138	Repack the pickle with protocol 2 and open in binary mode
+* https://github.com/Theano/Theano/pull/5881	* Implementing `GpuAdvancedIncSubtensor`
+* https://github.com/Theano/Theano/pull/6130	Correct a typo in make_node function (tensore.nnet.SoftmaxWithBias) 
+* https://github.com/Theano/Theano/pull/6044	? Remove output guard 
+* https://github.com/Theano/Theano/pull/6060	(small fix) Increase error tolerance for magma matrix_inverse tests
+* https://github.com/Theano/Theano/pull/6109	OpFromGraph small fix 
+* https://github.com/Theano/Theano/pull/6119	~[dev] Get rid of get_op_params() 
+* https://github.com/Theano/Theano/pull/6117	Remove duplicate tests. No need to retest them all in 2d and 4d. Fusion don't depend too much about ndim
+* https://github.com/Theano/Theano/pull/5747	Add support for atomic{Exch,Add} on long longs
+* https://github.com/Theano/Theano/pull/6087	add windows buildbot 
+* https://github.com/Theano/Theano/pull/6108	Make the CAReduce tests faster 
+* https://github.com/Theano/Theano/pull/6112	Wrap Op params for theano.gpuarray.dnn.GpuDnnBatchNorm 
+* https://github.com/Theano/Theano/pull/6106	jenkins pr master cache 
+* https://github.com/Theano/Theano/pull/6107	Compile less C code 
+* https://github.com/Theano/Theano/pull/6105	Speed up some tests 
+* https://github.com/Theano/Theano/pull/6077	~[dev] Add a DEBUG option for C code 
+* https://github.com/Theano/Theano/pull/6085	Add deterministic={default,more} flag
+* https://github.com/Theano/Theano/pull/6091	~ Params for other ops
+* https://github.com/Theano/Theano/pull/6013	Enable float16 for GpuGemmBatch
+* https://github.com/Theano/Theano/pull/6088	Fix opt crash in float16 and enable C code for MaxAndArgmax and Argmax 
+* https://github.com/Theano/Theano/pull/6069	** Add reduction based on cudnn # class GpuDnnReduction
+* https://github.com/Theano/Theano/pull/6084	speed up tests, fix compiledir cache crash and old unpickling
+* https://github.com/Theano/Theano/pull/6083	* Added the tri-gamma function
+* https://github.com/Theano/Theano/pull/6081	Params for Gemm, CGer, CGemv 
+* https://github.com/Theano/Theano/pull/6072	~ Gradient for matrix pseudoinverse 
+* https://github.com/Theano/Theano/pull/6045	Work around erroneous dnn_conv results with algo small an large batches 
+* https://github.com/Theano/Theano/pull/6082	Buildbot testsuite names 
+* https://github.com/Theano/Theano/pull/6049	removed part of _optcheck_fgraph and called std_fgraph instead 
+* https://github.com/Theano/Theano/pull/6076	Allow fallback on GpuCorrMM if cuDNN is not there 
+* https://github.com/Theano/Theano/pull/6062	Use FAST_RUN for reference version
+* https://github.com/Theano/Theano/pull/6041	Fix parameter types in ave_pool kernels, remove static_cast, add GLOBAL_MEM 
+* https://github.com/Theano/Theano/pull/6057	Fail if output memory not allocated 
+* https://github.com/Theano/Theano/pull/6055	Fix elemwise ValueError message (printf formatting) 
+* https://github.com/Theano/Theano/pull/6056	Update documentation and config flags about supported cuDNN algorithms. 
+* https://github.com/Theano/Theano/pull/6043	Don't print float16 warning for ops that don't have c code 
+* https://github.com/Theano/Theano/pull/6032	jenkins buildbot with docker 
+* https://github.com/Theano/Theano/pull/6030	Add lifter for CrossentropyCategorical1Hot and grad 
+* https://github.com/Theano/Theano/pull/5942	* Added mode 'half', 'full' to Images2Neibs. Tests pass
+* https://github.com/Theano/Theano/pull/6025	[ENH] Speed up nanguardmode by not checking *int* dtype
+* https://github.com/Theano/Theano/pull/6038	(small fix) Add doc for `dnn.include_path` and `dnn.library_path`.
+* https://github.com/Theano/Theano/pull/6012	Fix offset problems in the new backend
+* https://github.com/Theano/Theano/pull/6029	Fix issue in optimizations with bitwise operations 
+* https://github.com/Theano/Theano/pull/6015	* Port Softmax kernel to OpenCL 
+* https://github.com/Theano/Theano/pull/6027	Fix link to 2014 presentation 
+* https://github.com/Theano/Theano/pull/6026	(small fix) Re-allow runtime algorithms for conv3d Ops
+* https://github.com/Theano/Theano/pull/5980	Function that check the axes 
+* https://github.com/Theano/Theano/pull/6021	Jenkins python3 add fastrun and gpuarray 
+* https://github.com/Theano/Theano/pull/6022	Fix doc typos and spelling errors. Make spelling of "optimize" consistent. 
+* https://github.com/Theano/Theano/pull/6011	(small fix) update usage of `dnn.enabled` 
+* https://github.com/Theano/Theano/pull/5935	Wrap Op params for theano.sandbox.rng_mrg.mrg_uniform 
+* https://github.com/Theano/Theano/pull/5955	Make version as dev version and better error. 
+* https://github.com/Theano/Theano/pull/6009	[doc/requirements.inc] Specify which 'lib' or 'lib64' should be added to LD_LIBRARY_PATH
+* https://github.com/Theano/Theano/pull/5016	Convert Github readme.txt to .rst 
+* https://github.com/Theano/Theano/pull/5794	* Faster topo # adds a theano flag cycle_detection
+* https://github.com/Theano/Theano/pull/5996	Fix memory leak in GpuCAReduceCPY 
+* https://github.com/Theano/Theano/pull/5923	don't move op that don't support float16 on the GPU 
+* https://github.com/Theano/Theano/pull/5993	(crash fix) Fix availability of cuDNN enumerations in v5 vs v6
+* https://github.com/Theano/Theano/pull/5983	Fix arguments order in register_specify_shape_c_code of tensor/type.py 
+* https://github.com/Theano/Theano/pull/5964	Wrap Op params for many gpuarray DNN Ops and add cuDNN v6 integration # More globally: Speed-up compilation by using op params for a bunch of ops, including cuDNN ops and much used ops (e.g. DimShuffle)
+* https://github.com/Theano/Theano/pull/5940	dockerfile for jenkins buildbot 
+* https://github.com/Theano/Theano/pull/5915	add magma to buildbots 
+* https://github.com/Theano/Theano/pull/5989	added description to strides in pools 
+* https://github.com/Theano/Theano/pull/5988	Correctly handle offset in GpuCumOp 
+* https://github.com/Theano/Theano/pull/5987	Do not forget offset in GpuCumOp 
+* https://github.com/Theano/Theano/pull/5908	crash fix and opt warning fix(make opt apply) 
+* https://github.com/Theano/Theano/pull/5974	outdim -> ndim leftover and the same to is_flat 
+* https://github.com/Theano/Theano/pull/5965	Wrap Op params for theano.tensor.nnet.corr.BaseCorrMM and sub-classes
+* https://github.com/Theano/Theano/pull/5960	Fix the opt crash regression introduced by gh-5950
+* https://github.com/Theano/Theano/pull/5957	Wrap Op params for theano.tensor.nnet.corr3d.BaseCorr3dMM and subclasses
+* https://github.com/Theano/Theano/pull/5936	* Add support for cudnn v6 dilated convolution
+* https://github.com/Theano/Theano/pull/5950	Test for fix in libgpuarray, plus fix in batched_dot opt 
+* https://github.com/Theano/Theano/pull/5948	Fix jenkins tests 
+* https://github.com/Theano/Theano/pull/5946	Give a good error when people use device=gpu 
+* https://github.com/Theano/Theano/pull/5947	Update nnet.txt 
+* https://github.com/Theano/Theano/pull/5927	Partially factorize GpuKernelBase.get_params() and configure it to use ParamsType
+* https://github.com/Theano/Theano/pull/5944	remove theano/compat/six.py 
+* https://github.com/Theano/Theano/pull/5918	Allow c_support_code() to support list of strings and update ParamsType 
+* https://github.com/Theano/Theano/pull/5941	(small update) Add restrictions to warning messages condition in GpuDnnConvGradW
+* https://github.com/Theano/Theano/pull/5931	add gpuarray to python2 buildbot 
+* https://github.com/Theano/Theano/pull/5937	Mention duplicated values in warning messages
+* https://github.com/Theano/Theano/pull/5852	Split elemwise addmul 
+* https://github.com/Theano/Theano/pull/5922	BUG: fix bytes/string concat error, closes #5887 
+* https://github.com/Theano/Theano/pull/5921	Remove bug in optimization 
+* https://github.com/Theano/Theano/pull/5902	[BUG, CRASH] Fixes in DebugMode for GPU 
+* https://github.com/Theano/Theano/pull/5903	[BUG,CRASH] Fix crash in GPU advanced indexing with no arrays 
+* https://github.com/Theano/Theano/pull/5909	minor fix to test_nnet.py 
+* https://github.com/Theano/Theano/pull/5758	* Add sigmoid_binary_crossentropy function 
+* https://github.com/Theano/Theano/pull/5778	* Add magma gpu svd and matrix inverse 
+* https://github.com/Theano/Theano/pull/5900	Update libgpuarray version in the doc 
+* https://github.com/Theano/Theano/pull/5895	Added an optimization for inplace gpu_cusolver_solve and tests 
+* https://github.com/Theano/Theano/pull/5883	Add on_error option for Cholesky 
+* https://github.com/Theano/Theano/pull/5896	Fix more issues in DebugMode 
+* https://github.com/Theano/Theano/pull/5888	Fix tests in debugmode 
+* https://github.com/Theano/Theano/pull/5886	Fixed minor spelling error 
+* https://github.com/Theano/Theano/pull/5885	Corrected some comments and code formatting 
+* https://github.com/Theano/Theano/pull/5873	[Interface change] be more consistent, use ndim instead of outdim
+* https://github.com/Theano/Theano/pull/5877	Remove goto in OpenMP Elemwise fail code 
+* https://github.com/Theano/Theano/pull/5878	avoid creating float64 variables 
+* https://github.com/Theano/Theano/pull/5872	Stop the compilation when we found a negative shape
+* https://github.com/Theano/Theano/pull/5870	* Prevent gpu initialization when not required 
+* https://github.com/Theano/Theano/pull/5854	Fix hard crash when dividing by 0
+* https://github.com/Theano/Theano/pull/5865	fix opt warning in the ifelse lifter 
+* https://github.com/Theano/Theano/pull/5850	Disable compute_test_value during Theano optimization phase. This give a better error in pymc3 issue 1939
+* https://github.com/Theano/Theano/pull/5538	Setting gradient for MRG_RandomStreams distribution variables to be null 
+* https://github.com/Theano/Theano/pull/5863	Update Windows (and other generic) installation instructions 
+* https://github.com/Theano/Theano/pull/5799	* Gpu cholesky # based on cusolver
+* https://github.com/Theano/Theano/pull/5859	Always import gpuarray.rng_mrg to have its optimizer imported
+* https://github.com/Theano/Theano/pull/5755	Use Op params for GpuDnnSoftmax 
+* https://github.com/Theano/Theano/pull/5860	move buildbot cache outside workspace 
+* https://github.com/Theano/Theano/pull/5716	Better error message when an opt make an invalide replace
+* https://github.com/Theano/Theano/pull/5842	Unsigned char: fix: theano/scalar/basic.py 
+* https://github.com/Theano/Theano/pull/5821	change default dnn path on windows 
+* https://github.com/Theano/Theano/pull/5789	Changes to GpuEye to enable `k` offset parameter
+* https://github.com/Theano/Theano/pull/5847	Remove call to GpuKernel_init with binary 
+* https://github.com/Theano/Theano/pull/5735	* Disk cache option for gpuarray 
+* https://github.com/Theano/Theano/pull/5710	Implement new op param type `EnumType`
+* https://github.com/Theano/Theano/pull/5832	Fix memory leak 
+* https://github.com/Theano/Theano/pull/5814	* Remove the old backend and all of its tentacles 
+* https://github.com/Theano/Theano/pull/5834	Use expm1 for elu 
+* https://github.com/Theano/Theano/pull/5785	inc to set for zeros 
+* https://github.com/Theano/Theano/pull/5820	fix theano.sparse.mul docs 
+* https://github.com/Theano/Theano/pull/5808	? replace as ChoiceFromUniform prop 
+* https://github.com/Theano/Theano/pull/5815	Make opt useless_reshape handle -1 
+* https://github.com/Theano/Theano/pull/5819	add GLOBAL_MEM 
+* https://github.com/Theano/Theano/pull/5612	* Implement a struct generator for wrapping op params in Python and C codes
+* https://github.com/Theano/Theano/pull/5802	change macro names # In new back-end: DTYPE_I* -> DTYPE_INPUT_*, etc.
+* https://github.com/Theano/Theano/pull/5796	Print compilation count for all compiled Op classes with "theano-cache list" command 
+* https://github.com/Theano/Theano/pull/5806	make work Gammaln on the new gpu back-end 
+* https://github.com/Theano/Theano/pull/5787	Fix out-of-date link to sympy 
+* https://github.com/Theano/Theano/pull/5774	Don't move scalar float* elemwise unless the result is needed on the GPU
+* https://github.com/Theano/Theano/pull/5751	* MultinomialWOReplacementFromUniform := ChoiceFromUniform 
+* https://github.com/Theano/Theano/pull/5779	Update css.inc 
+* https://github.com/Theano/Theano/pull/5746	skip_verify_grad added to makeTester for all InplaceTester 
+* https://github.com/Theano/Theano/pull/5579	Clean up 
+* https://github.com/Theano/Theano/pull/5772	Add conv2d transpose to doc 
+* https://github.com/Theano/Theano/pull/5756	Removed theano/sandbox/linalg/ops.py and theano/sandbox/linalg/tests/test_linalg.py from flake8 whitelist 
+* https://github.com/Theano/Theano/pull/5769	Open tempfile in mode 'w' to prevent TypeError 
+* https://github.com/Theano/Theano/pull/5433	Update Windows installation documentation for Anaconda
+* https://github.com/Theano/Theano/pull/5760	Fix opt crash fix and more information when verify_grad detect an error
+* https://github.com/Theano/Theano/pull/5470	print_test_value in debugging tutorial 
+* https://github.com/Theano/Theano/pull/5739	Optimization speed up 
+* https://github.com/Theano/Theano/pull/5548	Add automatic detection of log handlers 
+* https://github.com/Theano/Theano/pull/5749	Removed files from flake8 test whitelist 
+* https://github.com/Theano/Theano/pull/5665	Optimization to remove upcast in local_cast_cast 
+* https://github.com/Theano/Theano/pull/5562	Speed merge optimizer and allow partial optimizer profile 
+* https://github.com/Theano/Theano/pull/5686	If the user do theano.function(profile=True), do a warning about CUDA_LAUNCH_BLOCKING not being used.
+* https://github.com/Theano/Theano/pull/5718	Prepare final release 0.9.0. 
+* https://github.com/Theano/Theano/pull/5698	Fix pep8 
+* https://github.com/Theano/Theano/pull/5720	Better error message in a test 
+* https://github.com/Theano/Theano/pull/5717	crash fix of careduce with bool 
