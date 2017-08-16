@@ -2,11 +2,11 @@ Highlights
  - Moved Python 3.* minimum supported version from 3.3 to 3.4
  - Replaced deprecated package ``nose-parameterized`` with up-to-date package ``parameterized`` for Theano requirements
  - Removed old GPU backend ``theano.sandbox.cuda``. New backend ``theano.gpuarray`` is now the official GPU backend
- - Support more debuggers for PdbBreakpoint
+ - Support more debuggers for ``PdbBreakpoint``
  - Faster compilation step by massively using a new interface for op params
  - Faster optimization step
  - Documentation updated and more complete
- - Many bug fixes, and crash fixes and warning improvements
+ - Many bug fixes, crash fixes and warning improvements
 
 New features
  - Added a wrapper for baidu's CTC cost and gradient functions

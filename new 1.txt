@@ -1,0 +1,13 @@
+chosen = None
+chosen_hash = None
+
+++++++++++++++++++
+new_hash = hash()
+_once
+	if chosen is None:
+		chosen = choose()
+		chosen_hash = new_hash
+_on_shape_change
+	if chosen_hash is None or chosen_hash != new_hash:
+		chosen = choose()
+		chosen_hash = new_hash
