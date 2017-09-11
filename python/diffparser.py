@@ -22,8 +22,11 @@ class Difference(object):
 	def _interval_str(self, a, b):
 		return '%d' % a if a == b else '%d,%d' % (a, b)
 
+	def is_stable_change(self):
+		return self.diff_mode == 'c' and len(self.from_lines) == len(self.to_lines)
+
 	def smart_print(self):
-		aligner = Aligner(match=1, indel=-1, mismatch=-2)
+		aligner = Aligner(match=1, indel=-1, mismatch=-1)
 		print( '%s%s%s' % (self._interval_str(self.from_start, self.from_end), self.diff_mode, self._interval_str(self.to_start, self.to_end)) )
 		if diff_mode == 'd':
 			for line in self.from_lines:
@@ -36,18 +39,17 @@ class Difference(object):
 				for i in range(len(self.from_lines)):
 					A = self.from_lines[i]
 					B = self.to_lines[i]
-					if A == '<':
-						A = ''
-					else:
-						A = A[2:]
-					if B == '>':
-						B = ''
-					else:
-						B = B[2:]
+					A = '' if A == '<' else A[2:]
+					B = '' if B == '>' else B[2:]
 					alignment = aligner.align(A, B)
 					unique_diff = alignment.unique_difference()
 					if unique_diff is None:
-						print(alignment)
+						stripped_diffs = alignment.strip_similarities()
+						if stripped_diffs is None:
+							print(alignment)
+						else:
+							for al in stripped_diffs:
+								print(al)
 					else:
 						sub_A, sub_B, sub_diff = unique_diff
 						if sub_A == aligner.indel_symbol * len(sub_A):
@@ -76,7 +78,8 @@ pattern_diff_start = re.compile('^([0-9]+)(,([0-9]+))?([acd])([0-9]+)(,([0-9]+))
 differences = []
 additions = []
 deletions = []
-changes = []
+stable_changes = []
+unstable_changes = []
 
 with open(sys.argv[1], 'rb') as diff_file:
 	diff_mode = ''
@@ -97,7 +100,10 @@ with open(sys.argv[1], 'rb') as diff_file:
 				if diff_mode == 'a':
 					additions.append(difference)
 				elif diff_mode == 'c':
-					changes.append(difference)
+					if difference.is_stable_change():
+						stable_changes.append(difference)
+					else:
+						unstable_changes.append(difference)
 				elif diff_mode == 'd':
 					deletions.append(difference)
 			from_start, from_end, diff_mode, to_start, to_end = matcher.group(1, 3, 4, 5, 7)
@@ -124,17 +130,22 @@ with open(sys.argv[1], 'rb') as diff_file:
 	if diff_mode == 'a':
 		additions.append(difference)
 	elif diff_mode == 'c':
-		changes.append(difference)
+		if difference.is_stable_change():
+			stable_changes.append(difference)
+		else:
+			unstable_changes.append(difference)
 	elif diff_mode == 'd':
 		deletions.append(difference)
 
 print(len(differences), 'difference' + ('s.' if len(differences) != 1 else '.'))
-print(len(changes), 'change' + ('s.' if len(changes) != 1 else '.'))
+print(len(unstable_changes), 'unstable change' + ('s.' if len(unstable_changes) != 1 else '.'))
+print(len(stable_changes), 'stable change' + ('s.' if len(stable_changes) != 1 else '.'))
 print(len(additions), 'addition' + ('s.' if len(additions) != 1 else '.'))
 print(len(deletions), 'deletion' + ('s.' if len(deletions) != 1 else '.'))
-for name, elements in zip(('Additions', 'Deletions', 'Changes'), (additions, deletions, changes)):
-	print('=' * (len(name) + 1))
-	print(name)
-	print('=' * (len(name) + 1))
-	for element in elements:
-		element.smart_print()
+for name, elements in zip(('Additions', 'Deletions', 'Unstable changes', 'Stable changes'), (additions, deletions, unstable_changes, stable_changes)):
+	if elements:
+		print('=' * (len(name) + 1))
+		print(name)
+		print('=' * (len(name) + 1))
+		for element in elements:
+			element.smart_print()

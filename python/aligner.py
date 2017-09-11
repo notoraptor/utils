@@ -42,6 +42,30 @@ class Alignment:
 		sub_B = self.B[a:b]
 		return (sub_A, sub_B, sub_diff)
 
+	def strip_similarities(self):
+		acc_A = ''
+		acc_B = ''
+		acc_diff = ''
+		previous = 0
+		len_diff = len(self.diff)
+		while previous < len_diff:
+			a = previous
+			while a < len_diff and self.diff[a] == 'X':
+				a += 1
+			b = a + 1
+			while b < len_diff and self.diff[b] != 'X':
+				b += 1
+			if a - previous > 0:
+				acc_A += '|'
+				acc_B += '|'
+				acc_diff += '|'
+			if b - a > 0:
+				acc_A += self.A[a:b]
+				acc_B += self.B[a:b]
+				acc_diff += self.diff[a:b]
+			previous = b
+		return (acc_A, acc_B, acc_diff) if acc_A else None
+
 class Aligner:
 
 	def __init__(self, match=1, mismatch=-1, indel=-1, gap=' '):
@@ -80,13 +104,7 @@ class Aligner:
 		i = matrix_height - 1
 		j = matrix_width - 1
 		while i > 0 or j > 0:
-			if i > 0 and j > 0 and matrix[i][j] == matrix[i-1][j-1] + self.similarity(A[i], B[j]):
-				alignment_A = A[i] + alignment_A
-				alignment_B = B[j] + alignment_B
-				alignment_diff = ('X' if A[i] == B[j] else '*') + alignment_diff
-				i = i-1
-				j = j-1
-			elif i > 0 and matrix[i][j] == matrix[i-1][j] + self.indel_score:
+			if i > 0 and matrix[i][j] == matrix[i-1][j] + self.indel_score:
 				alignment_A = A[i] + alignment_A
 				alignment_B = self.indel_symbol + alignment_B
 				alignment_diff = '-' + alignment_diff
@@ -95,6 +113,12 @@ class Aligner:
 				alignment_A = self.indel_symbol + alignment_A
 				alignment_B = B[j] + alignment_B
 				alignment_diff = '-' + alignment_diff
+				j = j-1
+			elif i > 0 and j > 0 and matrix[i][j] == matrix[i-1][j-1] + self.similarity(A[i], B[j]):
+				alignment_A = A[i] + alignment_A
+				alignment_B = B[j] + alignment_B
+				alignment_diff = ('X' if A[i] == B[j] else '*') + alignment_diff
+				i = i-1
 				j = j-1
 		if debug:
 			for row in matrix:
