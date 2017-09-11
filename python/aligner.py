@@ -1,13 +1,50 @@
 from __future__ import absolute_import, print_function, division
+from StringIO import StringIO
+
+class Alignment:
+	def __init__(self, A, B, diff, score):
+		self.A = A
+		self.B = B
+		self.diff = diff
+		self.score = score
+
+	def __str__(self):
+		out = StringIO()
+		print('[score=%d]' % self.score, file=out)
+		print(self.A, file=out)
+		print(self.B, file=out)
+		print(self.diff, file=out)
+		s = out.getvalue()
+		out.close()
+		return s
+
+	def unique_difference(self):
+		len_diff = len(self.diff)
+		a = 0
+		while a < len_diff:
+			if self.diff[a] != 'X':
+				break
+			a += 1
+		b = a + 1
+		while b < len_diff:
+			if self.diff[b] == 'X':
+				break
+			b += 1
+		c = b + 1
+		while c < len_diff:
+			if self.diff[c] != 'X':
+				break
+			c += 1
+		if c < len_diff:
+			return None
+		sub_diff = self.diff[a:b]
+		sub_A = self.A[a:b]
+		sub_B = self.B[a:b]
+		return (sub_A, sub_B, sub_diff)
 
 class Aligner:
 
-	match_score = 1
-	diff_score = -1
-	indel_score = -1
-	indel_symbol = ' '
-
-	def __init__(self, match=1, mismatch=-1, indel=-1, gap='-'):
+	def __init__(self, match=1, mismatch=-1, indel=-1, gap=' '):
 		self.match_score = match
 		self.diff_score = mismatch
 		self.indel_score = indel
@@ -16,8 +53,6 @@ class Aligner:
 	def similarity(self, a, b):
 		if ord(a) == ord(b):
 			return self.match_score
-		elif a == ' ' or b == self.indel_symbol:
-			return self.indel_score
 		else:
 			return self.diff_score
 
@@ -56,7 +91,7 @@ class Aligner:
 				alignment_B = self.indel_symbol + alignment_B
 				alignment_diff = '-' + alignment_diff
 				i = i-1
-			else:
+			elif j > 0 and matrix[i][j] == matrix[i][j-1] + self.indel_score:
 				alignment_A = self.indel_symbol + alignment_A
 				alignment_B = B[j] + alignment_B
 				alignment_diff = '-' + alignment_diff
@@ -68,10 +103,11 @@ class Aligner:
 					for i in range(1, len(row)):
 						print('\t%s' % row[i], end='')
 				print()
-		return (alignment_A, alignment_B, alignment_diff)
+		score = matrix[-1][-1]
+		return Alignment(alignment_A, alignment_B, alignment_diff, score)
 
-A = "theano.gpuarray.tests.check_dnn_conv.TestDnnConv2D.test_fwd('time_once', 'float16', 'float16', ((2, 3, 300, 5), (2, 3, 40, 4), (1, 1), (1, 1), 'half', 'conv', 2.0, 0)) ... (using CUDNN_CONVOLUTION_FWD_ALGO_IMPLICIT_PRECOMP_GEMM (timed), ws:0, hash:FWD|GPU#0000:06:00.0 -t -g 1 -dim 2,3,300,5,4500,1500,5,1 -filt 2,3,40,4 -mode conv -pad 20,2 -subsample 1,1 -dilation 1,1 -hh [unaligned])"
-B = "theano.gpuarray.tests.check_dnn_conv.TestDnnConv2D.test_fwd('time_once', 'float16', 'float16', ((2, 3, 300, 5), (2, 3, 40, 4), (1, 1), (1, 1), 'half', 'conv', 2.0, 0)) ... (using CUDNN_CONVOLUTION_FWD_ALGO_IMPLICIT_GEMM (timed), ws:0, hash:FWD|GPU#0000:06:00.0 -t -g 1 -dim 2,3,300,5,4500,1500,5,1 -filt 2,3,40,4 -mode conv -pad 20,2 -subsample 1,1 -dilation 1,1 -hh [unaligned])"
-alignment = Aligner().align(A, B, debug=False)
-for x in alignment:
-	print(x)
+if __name__ == '__main__':
+	A = "theano.gpuarray.tests.check_dnn_conv.TestDnnConv2D.test_fwd('time_once', 'float16', 'float16', ((2, 3, 300, 5), (2, 3, 40, 4), (1, 1), (1, 1), 'half', 'conv', 2.0, 0)) ... (using CUDNN_CONVOLUTION_FWD_ALGO_IMPLICIT_PRECOMP_GEMM (timed), ws:0, hash:FWD|GPU#0000:06:00.0 -t -g 1 -dim 2,3,300,5,4500,1500,5,1 -filt 2,3,40,4 -mode conv -pad 20,2 -subsample 1,1 -dilation 1,1 -hh [unaligned])"
+	B = "theano.gpuarray.tests.check_dnn_conv.TestDnnConv2D.test_fwd('time_once', 'float16', 'float16', ((2, 3, 300, 5), (2, 3, 40, 4), (1, 1), (1, 1), 'half', 'conv', 2.0, 0)) ... (using CUDNN_CONVOLUTION_FWD_ALGO_IMPLICIT_GEMM (timed), ws:0, hash:FWD|GPU#0000:06:00.0 -t -g 1 -dim 2,3,300,5,4500,1500,5,1 -filt 2,3,40,4 -mode conv -pad 20,2 -subsample 1,1 -dilation 1,1 -hh [unaligned])"
+	alignment = Aligner().align(A, B, debug=False)
+	print(alignment)
