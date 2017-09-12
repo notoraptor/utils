@@ -22,6 +22,9 @@ class Difference(object):
 	def _interval_str(self, a, b):
 		return '%d' % a if a == b else '%d,%d' % (a, b)
 
+	def diff_pos_str(self):
+		return '%s%s%s' % (self._interval_str(self.from_start, self.from_end), self.diff_mode, self._interval_str(self.to_start, self.to_end))
+
 	def is_stable_change(self):
 		return self.diff_mode == 'c' and len(self.from_lines) == len(self.to_lines)
 
@@ -36,32 +39,32 @@ class Difference(object):
 				print(line)
 		if diff_mode == 'c':
 			if len(self.from_lines) == len(self.to_lines):
+				alignments_list = []
+				alignments_set = set()
 				for i in range(len(self.from_lines)):
 					A = self.from_lines[i]
 					B = self.to_lines[i]
 					A = '' if A == '<' else A[2:]
 					B = '' if B == '>' else B[2:]
 					alignment = aligner.align(A, B)
-					unique_diff = alignment.unique_difference()
-					if unique_diff is None:
-						stripped_diffs = alignment.strip_similarities()
-						if stripped_diffs is None:
-							print(alignment)
-						else:
-							for al in stripped_diffs:
-								print(al)
+					characteristics = alignment.unique_difference()
+					if characteristics is None:
+						characteristics = alignment.strip_similarities()
+					if characteristics is None:
+						print(alignment)
 					else:
-						sub_A, sub_B, sub_diff = unique_diff
-						if sub_A == aligner.indel_symbol * len(sub_A):
-							print('[Differs only in B]')
-							print(sub_B)
-						elif sub_B == aligner.indel_symbol * len(sub_B):
-							print('[Differs only in A]')
-							print(sub_A)
-						else:
-							print(sub_A)
-							print(sub_B)
-							print(sub_diff)
+						alignments_list.append(characteristics)
+						alignments_set.add(characteristics)
+				if len(alignments_set) == 1:
+					if len(self.from_lines) > 1:
+						print('[All same]')
+					for l in alignments_list[0]:
+						print(l)
+					return alignments_list[0]
+				else:
+					for al in alignments_list:
+						for l in al:
+							print(l)
 			else:
 				for line in self.from_lines:
 					print(line)
@@ -69,6 +72,7 @@ class Difference(object):
 				for line in self.to_lines:
 					print(line)
 		print()
+		return None
 
 # a: add
 # c: change
@@ -137,6 +141,8 @@ with open(sys.argv[1], 'rb') as diff_file:
 	elif diff_mode == 'd':
 		deletions.append(difference)
 
+map_differences = dict()
+
 print(len(differences), 'difference' + ('s.' if len(differences) != 1 else '.'))
 print(len(unstable_changes), 'unstable change' + ('s.' if len(unstable_changes) != 1 else '.'))
 print(len(stable_changes), 'stable change' + ('s.' if len(stable_changes) != 1 else '.'))
@@ -148,4 +154,25 @@ for name, elements in zip(('Additions', 'Deletions', 'Unstable changes', 'Stable
 		print(name)
 		print('=' * (len(name) + 1))
 		for element in elements:
-			element.smart_print()
+			characteristics = element.smart_print()
+			if characteristics is not None:
+				a, b, diff = characteristics
+				if a > b:
+					a, b = b, a
+				characteristics = a, b, diff
+				if characteristics not in map_differences:
+					map_differences[characteristics] = []
+				map_differences[characteristics].append(element)
+
+if map_differences and any(len(l) > 1 for l in map_differences.values()):
+	print()
+	print('=============================')
+	print('Some differences categorized:')
+	print('=============================')
+	for c, l in sorted(map_differences.items(), key = lambda x : len(x[1])):
+		print(len(l), 'difference%s with:' % ('' if len(l) == 1 else 's'))
+		for ll in c:
+			print('\t%s' % ll)
+		for d in l:
+			print(d.diff_pos_str())
+		print()
