@@ -85,7 +85,7 @@ deletions = []
 stable_changes = []
 unstable_changes = []
 
-with open(sys.argv[1], 'rb') as diff_file:
+with open(sys.argv[1], 'r') as diff_file:
 	diff_mode = ''
 	from_start = 0
 	from_end = 0

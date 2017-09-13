@@ -1,5 +1,8 @@
 from __future__ import absolute_import, print_function, division
-from StringIO import StringIO
+try:
+	from StringIO import StringIO
+except ImportError:
+	from io import StringIO
 
 class Alignment:
 	def __init__(self, A, B, diff, score):
