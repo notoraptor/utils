@@ -1,0 +1,6 @@
+(boccosetEnv) [SLURM] boccoset@leto29:~$ sbatch --gres=gpu:titanxp --qos=high --mail-type=ALL --mail-user=stevenbocco@gmail.com run-valgrind.sh 
+Submitted batch job 31530
+
+Submitted batch job 31931
+
+valgrind --leak-check=full --show-reachable=yes --error-limit=no --gen-suppressions=all --log-file=out.log python -c "import theano"
