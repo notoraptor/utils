@@ -75,7 +75,7 @@ int main(int n, char* args[]) {
 	#ifdef DEBUG
 	cout << "Vars:" << endl;
 	for (size_t i = 0; i < varnames.size(); ++i)
-		cout << '\t' << varnames[i] << " = " << varvals[i] << endl;
+		cout << '\t' << varnames[i] << " = '" << varvals[i] << "'" << endl;
 	cout << "Cmd:" << endl;
 	for (size_t i = 0; i < command.size(); ++i)
 			cout << " " << command[i];

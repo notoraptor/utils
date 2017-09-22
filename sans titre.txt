@@ -1,0 +1,39 @@
+    def perform(self, node, inputs, outputs_storage):
+        inp, grid = inputs
+        out_height, out_width = grid.shape[1], grid.shape[2]
+        num_batch, num_channels, N, M = inp.shape
+        assert num_batch == grid.shape[0]
+        assert grid.shape[3] == 2
+        out = np.zeros((num_batch, num_channels, out_height, out_width))
+        grid = grid.transpose(0, 2, 1, 3)
+        def k(tens):
+            return np.maximum(np.zeros(tens.shape), 1 - np.abs(tens))
+        for image_index in range(num_batch):
+            for channel_index in range(num_channels):
+                img_t_b = inp[image_index, channel_index].T.reshape(1, M, N)
+                X = grid[image_index, :, :, 0].flatten()
+                Y = grid[image_index, :, :, 1].flatten()
+                Q = X.size
+                assert Q == Y.size
+                X = X.reshape(Q, 1)
+                Y = Y.reshape(Q, 1)
+
+                neg_ones_for_x = -np.ones(X.shape)
+                neg_ones_for_y = -np.ones(Y.shape)
+                X1 = np.hstack((X, neg_ones_for_x))
+                M1 = np.vstack((np.ones(M), np.arange(M)))
+                KXM = k(np.dot(X1, M1))
+                assert tuple(KXM.shape) == (Q, M)
+                Y1 = np.hstack((Y, neg_ones_for_y))
+                N1 = np.vstack((np.ones(N), np.arange(N)))
+                KYN = k(np.dot(Y1, N1))
+                assert tuple(KYN.shape) == (Q, N)
+                KXM1 = KXM.reshape(Q, M, 1)
+                KY1N = KYN.reshape(Q, N, 1).transpose(0, 2, 1)
+                assert tuple(KXM1.shape) == (Q, M, 1)
+                assert tuple(KY1N.shape) == (Q, 1, N)
+                KXY = np.matmul(KXM1, KY1N)
+                assert tuple(KXY.shape) == (Q, M, N), (Q, M, N, KXY.shape)
+                V = np.sum(np.multiply(KXY, img_t_b), axis=(1, 2))
+                assert tuple(V.shape) == (Q,), (Q, 1, V.shape)
+                out[image_index, channel_index] = V.reshape(out_width, out_height).T

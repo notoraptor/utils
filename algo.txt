@@ -1,0 +1,49 @@
+from __future__ import absolute_import, print_function, division
+import numpy as np
+
+M = 23
+N = 44
+
+Q points, q(x, y) élément de Q
+X = Q[:,0]
+Y = Q[:,1]
+
+0 <= x <= m - 1
+-m <= x - m <= - 1
+1 <= |x - m| <= m
+-m <= -|x - m| <= -1
+1 - m <= 1 - |x - m| <= 0
+
+
+a -b = a(1) + b(-1) = a(1) + (-1)b
+
+
+(1,2) * (2,1) = (1,1)
+
+[x, -1]
+[1
+y]
+(x)(1) + (-1)(y)
+
+X1 = [x, -1] ..., taille (Q, 2)
+M1 = [1 ... 1][1...M], taille (2, M)
+XM = X1 * M1 = (Q,2) * (2,M) = (Q, M) = {xi-mj}
+
+Y1 = [y, -1] ..., taille (Q, 2)
+N1 = [-1 ... -1][1 ... N], taille (2, N)
+YN = (Q,2) * (2,N) = (Q,N) = {yi-nj}
+
+def k(ab):
+	return np.maximum(np.zeros(ab.shape), 1 - np.abs(ab))
+
+KXM = k(XM)
+KYN = k(YN)
+KXM1 = KXM.reshape(Q, M, 1)
+KY1N = KYN.reshape(Q, N, 1).transpose(Q, 1, N)
+
+KXY = np.dot(KXM1, KY1N) # == (Q, M, N)
+
+img_broadcastable = img.reshape(1, M, N)
+
+pre_V = np.multiply(KXY, img_broadcastable)
+V = np.sum(pre_V, axix=0)
