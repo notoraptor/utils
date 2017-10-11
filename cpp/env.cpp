@@ -56,9 +56,7 @@ int main(int n, char* args[]) {
 		cout << "Usage: " << args[0] << "VAR1=VAL1 VAR2=VAL2 ... command args ..." << endl;
 		return 1;
 	}
-	vector<string> varnames;
-	vector<string> varvals;
-	vector<string> command;
+	vector<string> varnames, varvals, command;
 	bool in_vars = true;
 	for (int i = 1; i < n; ++i) {
 		if (in_vars) {
@@ -72,21 +70,22 @@ int main(int n, char* args[]) {
 		} else
 			add_protected(command, args[i]);
 	}
-	#ifdef DEBUG
-	cout << "Vars:" << endl;
-	for (size_t i = 0; i < varnames.size(); ++i)
-		cout << '\t' << varnames[i] << " = '" << varvals[i] << "'" << endl;
-	cout << "Cmd:" << endl;
-	for (size_t i = 0; i < command.size(); ++i)
-			cout << " " << command[i];
-	cout << endl;
-	#endif
 	if (!command.empty()) {
+		#ifdef DEBUG
+		cout << "Envionment variables:" << endl;
+		for (size_t i = 0; i < varnames.size(); ++i)
+			cout << "\t\"" << varnames[i] << "=" << varvals[i] << "\"" << endl;
+		cout << "Command:" << endl << '\t' << command[0];
+		for (size_t i = 1; i < command.size(); ++i) {
+			cout << ' ' << command[i];
+		}
+		cout << endl;
+		#endif
 		ostringstream final_command;
 		if (!varnames.empty()) {
-			final_command << "set " << varnames[0] << '=' << varvals[0];
+			final_command << "set \"" << varnames[0] << '=' << varvals[0] << '"';
 			for (size_t i = 1; i < varnames.size(); ++i)
-				final_command << " && set " << varnames[i] << '=' << varvals[i];
+				final_command << " && set \"" << varnames[i] << '=' << varvals[i] << '"';
 			final_command << " && ";
 		}
 		final_command << command[0];
