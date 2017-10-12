@@ -35,11 +35,14 @@ def theano_spatialtf_sampling_grid(height, width, dtype):
 def theano_spatialtf_upscale_values(v, limit):
     return ((v + 1.0) * (limit - 1.0)) / 2.0
 
+def my_abs(x):
+	sup = T.gt(x, 0).astype('int8')
+	less = -T.lt(x, 0).astype('int8')
+	return x * sup + x * less
 
 def theano_spatialtf_bilinear_kernel(values):
-    return T.maximum(values * 2, values)
     # return T.maximum(T.zeros(values.shape, values.dtype), 1.0 - abs(values))
-
+    return my_abs(values)
 
 def theano_spatialtf_grid(theta, out_dims):
     theta = T.as_tensor_variable(theta)
