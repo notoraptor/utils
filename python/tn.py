@@ -18,8 +18,8 @@ def functor_abs(x):
 x_val = np.arange(20, dtype=theano.config.floatX)
 # x_val[0] will be always 0 for x_val or x_val * 2.
 
-#print('Verifying gradient of abs(x)')
-#utt.verify_grad(functor_abs, [x_val], n_tests=10)
+print('Verifying gradient of abs(x)')
+utt.verify_grad(functor_abs, [x_val], n_tests=10)
 
 print('Verifying gradient of max(x, x)')
 utt.verify_grad(functor_x_x, [x_val], n_tests=10)
