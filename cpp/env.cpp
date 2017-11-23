@@ -1,3 +1,14 @@
+/** Script to run Windows commands with specific environment variables values.
+ * Intend to reproduce linux syntax:
+ * 		VAR1=VAL1 VAR2=VAL2 ... command
+ * with:
+ * 		env VAR1=VAL1 VAR2=VAL2 ... command
+ * Syntax used in Windows command line:
+ * 		set VAR1=VAL1 && set VAR2=VAL2 && ... && command
+ * Some documentation (although finally not used):
+ * 		https://superuser.com/questions/223104/setting-and-using-variable-within-same-command-line-in-windows-cmd-exe
+ * **/
+
 #include <iostream>
 #include <vector>
 #include <string>

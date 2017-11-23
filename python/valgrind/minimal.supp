@@ -1,0 +1,5061 @@
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:tupledealloc
+   fun:code_dealloc
+   fun:load_source_module
+   fun:import_submodule
+   fun:load_next
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+   fun:builtin___import__
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:code_dealloc
+   fun:load_source_module
+   fun:import_submodule
+   fun:load_next
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+   fun:builtin___import__
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:code_dealloc
+   fun:tupledealloc
+   fun:code_dealloc
+   fun:load_source_module
+   fun:import_submodule
+   fun:load_next
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+   fun:builtin___import__
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:code_dealloc
+   fun:load_source_module
+   fun:import_submodule
+   fun:load_next
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+   fun:builtin___import__
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:fixstate
+   fun:fixdfa
+   fun:PyGrammar_AddAccelerators
+   fun:PyParser_New
+   fun:parsetok
+   fun:PyParser_ASTFromFile
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:PyNode_AddChild
+   fun:push
+   fun:PyParser_AddToken
+   fun:parsetok
+   fun:PyParser_ASTFromFile
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:PyNode_AddChild
+   fun:shift
+   fun:PyParser_AddToken
+   fun:parsetok
+   fun:PyParser_ASTFromFile
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromFile
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromFile
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromFile
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromFile
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromFile
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop_i
+   fun:compiler_addop_o
+   fun:compiler_import
+   fun:compiler_visit_stmt
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop_i
+   fun:compiler_tuple
+   fun:compiler_visit_expr
+   fun:compiler_visit_stmt
+   fun:compiler_function
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop_i
+   fun:compiler_nameop
+   fun:compiler_visit_expr
+   fun:compiler_visit_expr
+   fun:compiler_call
+   fun:compiler_visit_expr
+   fun:compiler_visit_keyword
+   fun:compiler_call
+   fun:compiler_visit_expr
+   fun:compiler_visit_stmt
+   fun:compiler_function
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:compiler_unit_free
+   fun:compiler_exit_scope
+   fun:compiler_function
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop_i
+   fun:compiler_addop_o
+   fun:compiler_visit_keyword
+   fun:compiler_call
+   fun:compiler_visit_expr
+   fun:compiler_visit_stmt
+   fun:compiler_function
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyString_Resize
+   fun:assemble
+   fun:compiler_function
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:assemble_free
+   fun:assemble
+   fun:compiler_function
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop_i
+   fun:compiler_nameop
+   fun:compiler_function
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop_i
+   fun:compiler_addop_o
+   fun:compiler_nameop
+   fun:compiler_call
+   fun:compiler_visit_expr
+   fun:compiler_call
+   fun:compiler_visit_expr
+   fun:compiler_visit_stmt
+   fun:compiler_if
+   fun:compiler_if
+   fun:compiler_function
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:compiler_unit_free
+   fun:compiler_exit_scope
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_FileExFlags
+   fun:PyRun_SimpleFileExFlags
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:tupledealloc
+   fun:code_dealloc
+   fun:tupledealloc
+   fun:code_dealloc
+   fun:load_source_module
+   fun:import_submodule
+   fun:load_next
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+   fun:builtin___import__
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyString_Resize
+   fun:output_extend
+   fun:output_data
+   fun:render_field
+   fun:output_markup
+   fun:do_markup
+   fun:build_string
+   fun:do_string_format
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyString_Resize
+   fun:build_string
+   fun:do_string_format
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromString
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromString
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:assemble_free
+   fun:assemble
+   fun:compiler_class
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:compiler_unit_free
+   fun:compiler_exit_scope
+   fun:compiler_class
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:frame_dealloc
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+   fun:ensure_fromlist
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+   fun:builtin___import__
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop_i
+   fun:compiler_addop_o
+   fun:compiler_make_closure
+   fun:compiler_function
+   fun:compiler_body
+   fun:compiler_class
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop_i
+   fun:compiler_make_closure
+   fun:compiler_function
+   fun:compiler_body
+   fun:compiler_class
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromString
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromString
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop_i
+   fun:compiler_nameop
+   fun:compiler_body
+   fun:compiler_class
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop_i
+   fun:compiler_addop_o
+   fun:compiler_visit_expr
+   fun:compiler_call
+   fun:compiler_visit_expr
+   fun:compiler_call
+   fun:compiler_visit_expr
+   fun:compiler_visit_stmt
+   fun:compiler_body
+   fun:compiler_class
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyString_Resize
+   fun:output_extend
+   fun:output_data
+   fun:do_markup
+   fun:build_string
+   fun:do_string_format
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:dict_dealloc
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+   fun:ensure_fromlist
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop_i
+   fun:compiler_nameop
+   fun:compiler_visit_stmt
+   fun:compiler_body
+   fun:compiler_class
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop_i
+   fun:compiler_nameop
+   fun:compiler_call
+   fun:compiler_visit_expr
+   fun:compiler_visit_stmt
+   fun:compiler_body
+   fun:compiler_class
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop
+   fun:compiler_class
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyString_Resize
+   fun:assemble
+   fun:compiler_class
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:load_package
+   fun:import_submodule
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:code_dealloc
+   fun:load_source_module
+   fun:load_package
+   fun:import_submodule
+   fun:load_next
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+   fun:builtin___import__
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:random_seed
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:slot_tp_init
+   fun:type_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:tupledealloc
+   fun:code_dealloc
+   fun:load_source_module
+   fun:load_package
+   fun:import_submodule
+   fun:load_next
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+   fun:builtin___import__
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:tupledealloc
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+   fun:ensure_fromlist
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+   fun:builtin___import__
+   fun:PyObject_Call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyString_Resize
+   fun:PyString_FromFormatV
+   fun:PyString_FromFormat
+   fun:ufunc_get_doc
+   fun:_PyObject_GenericGetAttrWithDict
+   fun:builtin_getattr
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:ufunc_get_doc
+   fun:_PyObject_GenericGetAttrWithDict
+   fun:builtin_getattr
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+   fun:PyInstance_New
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:dict_dealloc
+   fun:instance_dealloc
+   fun:insertdict_by_entry
+   fun:insertdict
+   fun:dict_set_item_by_hash_or_entry
+   fun:PyDict_SetItem
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+   fun:ensure_fromlist
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyString_Resize
+   fun:PyString_Format
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:ufunc_get_doc
+   fun:_PyObject_GenericGetAttrWithDict
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:slot_tp_init
+   fun:type_call
+   fun:PyObject_Call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:delete_garbage
+   fun:collect
+   fun:collect_generations
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyTuple_New
+   fun:PyTuple_Pack
+   fun:_PyCode_ConstantKey
+   fun:compiler_add_o
+   fun:compiler_nameop
+   fun:compiler_visit_stmt
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:run_mod
+   fun:PyRun_StringFlags
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyString_Resize
+   fun:posix_read
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:subtype_dealloc
+   fun:delete_garbage
+   fun:collect
+   fun:collect_generations
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyTuple_New
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:r_object
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:code_dealloc
+   fun:run_mod
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+   fun:load_next
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:func_dealloc
+   fun:insertdict_by_entry
+   fun:insertdict
+   fun:dict_set_item_by_hash_or_entry
+   fun:PyDict_SetItem
+   fun:PyObject_SetAttr
+   fun:builtin_setattr
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyString_Resize
+   fun:string_concatenate
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+   fun:ensure_fromlist
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyString_Resize
+   fun:PyZlib_decompress
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallFunction
+   fun:get_data
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:get_data
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+   fun:load_next
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+   fun:builtin___import__
+   fun:PyObject_Call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+   fun:load_next
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+   fun:builtin___import__
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromString
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromString
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromString
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromString
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromString
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+   fun:load_next
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromString
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop_j
+   fun:compiler_boolop
+   fun:compiler_visit_expr
+   fun:compiler_if
+   fun:compiler_function
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop
+   fun:compiler_from_import
+   fun:compiler_visit_stmt
+   fun:compiler_function
+   fun:compiler_try_except
+   fun:compiler_if
+   fun:compiler_function
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyString_Resize
+   fun:assemble_emit
+   fun:assemble
+   fun:compiler_function
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:assemble_free
+   fun:assemble
+   fun:compiler_function
+   fun:compiler_body
+   fun:compiler_class
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyString_Resize
+   fun:assemble_emit
+   fun:assemble
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+   fun:load_next
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyString_Resize
+   fun:assemble
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+   fun:load_next
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:tupledealloc
+   fun:makecode
+   fun:assemble
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+   fun:load_next
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:compiler_unit_free
+   fun:compiler_exit_scope
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+   fun:load_next
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+   fun:load_next
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+   fun:builtin___import__
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromString
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromString
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:compiler_next_instr
+   fun:compiler_addop_i
+   fun:compiler_compare
+   fun:compiler_visit_expr
+   fun:compiler_if
+   fun:compiler_if
+   fun:compiler_if
+   fun:compiler_if
+   fun:compiler_function
+   fun:compiler_body
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:assemble_free
+   fun:assemble
+   fun:compiler_mod
+   fun:PyAST_Compile
+   fun:Py_CompileStringFlags
+   fun:compile_source
+   fun:get_code_from_data
+   fun:get_module_code
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+   fun:ensure_fromlist
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyString_Resize
+   fun:PyString_Repr
+   fun:PyObject_Repr
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+   fun:slot_tp_str
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+   fun:slot_tp_str
+   fun:_PyObject_Str
+   fun:PyObject_Str
+   fun:string_new
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:code_dealloc
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+   fun:load_next
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+   fun:builtin___import__
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:tupledealloc
+   fun:code_dealloc
+   fun:zipimporter_load_module
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallMethod
+   fun:import_submodule
+   fun:load_next
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+   fun:builtin___import__
+   fun:PyObject_Call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:slot_tp_call
+   fun:__Pyx_PyObject_Call
+   fun:__Pyx__PyObject_CallOneArg
+   fun:__Pyx_PyObject_CallOneArg
+   fun:init_ufuncs
+   fun:_PyImport_LoadDynamicModule
+   fun:import_submodule
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:delete_garbage
+   fun:collect
+   fun:collect_generations
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_New
+   fun:PyFunction_New
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+   fun:load_next
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:subtype_dealloc
+   fun:delete_garbage
+   fun:collect
+   fun:collect_generations
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_New
+   fun:PyDict_New
+   fun:PyInstance_NewRaw
+   fun:PyInstance_New
+   fun:PyObject_Call
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:_PyString_Resize
+   fun:fileio_readall
+   fun:fileio_read
+   fun:PyObject_Call
+   fun:PyObject_CallMethodObjArgs
+   fun:_bufferedreader_read_all
+   fun:buffered_read
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:_PyObject_CallMethod_SizeT
+   fun:textiowrapper_read
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:_bufferedreader_read_all
+   fun:buffered_read
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:_PyObject_CallMethod_SizeT
+   fun:textiowrapper_read
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:gen_send_ex
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:textiowrapper_read
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:gen_send_ex
+   fun:ifilter_next
+   fun:builtin_next
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:unicode_dealloc
+   fun:frame_dealloc
+   fun:tb_dealloc
+   fun:gen_close
+   fun:gen_del
+   fun:gen_dealloc
+   fun:PyEval_EvalFrameEx
+   fun:gen_send_ex
+   fun:gen_close
+   fun:gen_del
+   fun:gen_dealloc
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:PyDict_DelItem
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:run_mod
+   fun:PyRun_StringFlags
+   fun:exec_statement
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:slot_tp_init
+   fun:type_call
+   fun:PyObject_Call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:meth_dealloc
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:insertdict_by_entry
+   fun:insertdict
+   fun:dict_set_item_by_hash_or_entry
+   fun:PyDict_SetItem
+   fun:_PyObject_GenericSetAttrWithDict
+   fun:PyObject_SetAttr
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Realloc
+   fun:unicode_resize
+   fun:_PyUnicode_Resize
+   fun:PyUnicodeUCS4_DecodeUTF8Stateful
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:PyMarshal_ReadObjectFromString
+   fun:PyMarshal_ReadLastObjectFromFile
+   fun:read_compiled_module
+   fun:load_source_module
+   fun:import_submodule
+   fun:load_next
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:type_dealloc
+   fun:delete_garbage
+   fun:collect
+   fun:collect_generations
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyTuple_New
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+   fun:load_next
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+   fun:builtin___import__
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:decode_unicode
+   fun:parsestr
+   fun:parsestrplus
+   fun:ast_for_atom
+   fun:ast_for_power
+   fun:ast_for_expr
+   fun:ast_for_call
+   fun:ast_for_trailer
+   fun:ast_for_power
+   fun:ast_for_expr
+   fun:ast_for_expr_stmt
+   fun:ast_for_stmt
+   fun:ast_for_suite
+   fun:ast_for_try_stmt
+   fun:ast_for_suite
+   fun:ast_for_funcdef
+   fun:PyAST_FromNode
+   fun:PyParser_ASTFromString
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:list_dealloc
+   fun:PyArena_Free
+   fun:Py_CompileStringFlags
+   fun:builtin_compile
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:builtin_compile
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:slot_tp_init
+   fun:type_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:match_dealloc
+   fun:frame_dealloc
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+   fun:ensure_fromlist
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:PyDict_Clear
+   fun:dict_tp_clear
+   fun:delete_garbage
+   fun:collect
+   fun:collect_generations
+   fun:_PyObject_GC_Malloc
+   fun:PyType_GenericAlloc
+   fun:descr_new
+   fun:PyDescr_NewGetSet
+   fun:add_getset
+   fun:PyType_Ready
+   fun:type_new
+   fun:type_call
+   fun:PyObject_Call
+   fun:PyObject_CallFunctionObjArgs
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:deque_clear
+   fun:deque_dealloc
+   fun:dict_dealloc
+   fun:subtype_dealloc
+   fun:dict_dealloc
+   fun:subtype_dealloc
+   fun:frame_dealloc
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:freechildren
+   fun:PyNode_Free
+   fun:PyParser_ASTFromString
+   fun:Py_CompileStringFlags
+   fun:builtin_compile
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:array_dealloc
+   fun:array_dealloc
+   fun:frame_dealloc
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:unicode_dealloc
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:PyFrame_ClearFreeList
+   fun:clear_freelists
+   fun:collect
+   fun:collect_generations
+   fun:_PyObject_GC_Malloc
+   fun:PyType_GenericAlloc
+   fun:enum_new
+   fun:type_call
+   fun:PyObject_Call
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:NpyIter_Deallocate
+   fun:PyUFunc_ReduceWrapper
+   fun:PyUFunc_Reduce
+   fun:PyUFunc_GenericReduction
+   fun:ufunc_reduce
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:forward_ndarray_method
+   fun:array_any
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:PyString_Format
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:BaseException_clear
+   fun:BaseException_dealloc
+   fun:insertdict_by_entry
+   fun:insertdict
+   fun:dict_set_item_by_hash_or_entry
+   fun:PyDict_SetItem
+   fun:PyDict_SetItemString
+   fun:reset_exc_info
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:unicode_dealloc
+   fun:list_dealloc
+   fun:frame_dealloc
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:file_write
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:pattern_dealloc
+   fun:insertdict_by_entry
+   fun:insertdict
+   fun:dict_set_item_by_hash_or_entry
+   fun:PyDict_SetItem
+   fun:_PyModule_Clear
+   fun:PyImport_Cleanup
+   fun:Py_Finalize
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr4
+   fun:PyObject_Free
+   fun:PyGrammar_RemoveAccelerators
+   fun:Py_Finalize
+   fun:Py_Main
+   fun:(below main)
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuDevicePrimaryCtxRetain
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuDevicePrimaryCtxRetain
+   fun:do_init
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuDevicePrimaryCtxRetain
+   fun:do_init
+   fun:cuda_init
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   fun:py_dl_open
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuInit
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   fun:__pthread_once_slow
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuInit
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   fun:__pthread_once_slow
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuDevicePrimaryCtxRetain
+   fun:do_init
+   fun:cuda_init
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuDevicePrimaryCtxRetain
+   fun:do_init
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuInit
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   fun:__pthread_once_slow
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   fun:cudaGetErrorString
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuInit
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   fun:__pthread_once_slow
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuInit
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   fun:__pthread_once_slow
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuInit
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   fun:__pthread_once_slow
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   fun:cudaGetErrorString
+   fun:ffi_call_unix64
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuInit
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuDevicePrimaryCtxRetain
+   fun:do_init
+   fun:cuda_init
+   fun:gpucontext_init
+   fun:__pyx_f_5pygpu_8gpuarray_pygpu_init
+   fun:__pyx_pf_5pygpu_8gpuarray_22init
+   fun:__pyx_pw_5pygpu_8gpuarray_23init
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuDevicePrimaryCtxRetain
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuDevicePrimaryCtxRetain
+   fun:do_init
+   fun:cuda_init
+   fun:gpucontext_init
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuStreamCreate
+   fun:cuda_make_ctx
+   fun:do_init
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuMemAllocHost_v2
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuMemAllocHost_v2
+   fun:cuda_make_ctx
+   fun:do_init
+   fun:cuda_init
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuMemAllocHost_v2
+   fun:cuda_make_ctx
+   fun:do_init
+   fun:cuda_init
+   fun:gpucontext_init
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/home/notoraptor/.local/cudnn-v7002/cuda/lib64/libcudnn.so.7.0.2
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuStreamCreateWithPriority
+   obj:/home/notoraptor/.local/cudnn-v7002/cuda/lib64/libcudnn.so.7.0.2
+   obj:/home/notoraptor/.local/cudnn-v7002/cuda/lib64/libcudnn.so.7.0.2
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuMemAlloc_v2
+   obj:/home/notoraptor/.local/cudnn-v7002/cuda/lib64/libcudnn.so.7.0.2
+   obj:/home/notoraptor/.local/cudnn-v7002/cuda/lib64/libcudnn.so.7.0.2
+   obj:/home/notoraptor/.local/cudnn-v7002/cuda/lib64/libcudnn.so.7.0.2
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuMemHostAlloc
+   obj:/home/notoraptor/.local/cudnn-v7002/cuda/lib64/libcudnn.so.7.0.2
+   obj:/home/notoraptor/.local/cudnn-v7002/cuda/lib64/libcudnn.so.7.0.2
+   obj:/home/notoraptor/.local/cudnn-v7002/cuda/lib64/libcudnn.so.7.0.2
+   fun:cudnnCreate
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuMemHostAlloc
+   obj:/home/notoraptor/.local/cudnn-v7002/cuda/lib64/libcudnn.so.7.0.2
+   obj:/home/notoraptor/.local/cudnn-v7002/cuda/lib64/libcudnn.so.7.0.2
+   obj:/home/notoraptor/.local/cudnn-v7002/cuda/lib64/libcudnn.so.7.0.2
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuMemAlloc_v2
+   fun:cuda_alloc
+   fun:gpudata_alloc
+   fun:GpuArray_empty
+   fun:__pyx_f_5pygpu_8gpuarray_array_empty
+   fun:__pyx_f_5pygpu_8gpuarray_pygpu_empty
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcublas.so.8.0.88
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcublas.so.8.0.88
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcublas.so.8.0.88
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:malloc
+   fun:_dl_map_object_deps
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   fun:_PyImport_GetDynLoadFunc
+   fun:_PyImport_LoadDynamicModule
+   fun:import_submodule
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   fun:allocate_dtv
+   fun:_dl_allocate_tls
+   fun:allocate_stack
+   fun:pthread_create@@GLIBC_2.2.5
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuInit
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   fun:__pthread_once_slow
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+   obj:/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   fun:allocate_dtv
+   fun:_dl_allocate_tls
+   fun:allocate_stack
+   fun:pthread_create@@GLIBC_2.2.5
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuDevicePrimaryCtxRetain
+   fun:do_init
+   fun:cuda_init
+   fun:gpucontext_init
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   fun:allocate_dtv
+   fun:_dl_allocate_tls
+   fun:allocate_stack
+   fun:pthread_create@@GLIBC_2.2.5
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuDevicePrimaryCtxRetain
+   fun:do_init
+   fun:cuda_init
+   fun:gpucontext_init
+   fun:__pyx_f_5pygpu_8gpuarray_pygpu_init
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:PyObject_CallFunctionObjArgs
+   fun:ufunc_get_doc
+   fun:_PyObject_GenericGetAttrWithDict
+   fun:builtin_getattr
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:slot_tp_init
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:slot_tp_init
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:slot_tp_new
+   fun:type_call
+   fun:PyObject_Call
+   fun:PyObject_CallFunctionObjArgs
+   fun:build_class
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:gen_send_ex
+   fun:PyIter_Next
+   fun:PySequence_Tuple
+   fun:tuple_new
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:gen_send_ex
+   fun:wrap_next
+   fun:PyObject_Call
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:slot_tp_new
+   fun:type_call
+   fun:PyObject_Call
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:call_method
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:PyObject_CallFunction
+   fun:_PyObject_GenericGetAttrWithDict
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:partial_call
+   fun:PyObject_Call
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:call_function_tail
+   fun:_PyObject_CallMethod_SizeT
+   fun:arraydescr_protocol_descr_get
+   fun:array_protocol_descr_get
+   fun:array_interface_get
+   fun:_PyObject_GenericGetAttrWithDict
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:gen_send_ex
+   fun:listextend
+   fun:PySequence_List
+   fun:PySequence_Fast
+   fun:string_join
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyTuple_New
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:r_object
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:malloc
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   fun:_PyImport_GetDynLoadFunc
+   fun:_PyImport_LoadDynamicModule
+   fun:import_submodule
+   fun:ensure_fromlist
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:malloc
+   fun:dl_open_worker
+   fun:_dl_catch_error
+   fun:_dl_open
+   fun:dlopen_doit
+   fun:_dl_catch_error
+   fun:_dlerror_run
+   fun:dlopen@@GLIBC_2.2.5
+   fun:_PyImport_GetDynLoadFunc
+   fun:_PyImport_LoadDynamicModule
+   fun:import_submodule
+   fun:load_next
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:slot_tp_new
+   fun:type_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+   fun:ensure_fromlist
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:call_method
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:partial_call
+   fun:PyObject_Call
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:partial_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyTuple_New
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:PyMarshal_ReadObjectFromString
+   fun:PyMarshal_ReadLastObjectFromFile
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+   fun:builtin_map
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:slot_tp_init
+   fun:type_call
+   fun:PyObject_Call
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:PyObject_CallFunctionObjArgs
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:slot_tp_init
+   fun:type_call
+   fun:PyObject_Call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:slot_tp_new
+   fun:type_call
+   fun:PyObject_Call
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuStreamCreate
+   obj:/home/notoraptor/.local/cudnn-v7002/cuda/lib64/libcudnn.so.7.0.2
+   obj:/home/notoraptor/.local/cudnn-v7002/cuda/lib64/libcudnn.so.7.0.2
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:PyEval_CallObjectWithKeywords
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:slot_tp_init
+   fun:type_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:slot_tp_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:slot_tp_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:calloc
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   obj:/usr/lib/x86_64-linux-gnu/libcuda.so.384.66
+   fun:cuModuleLoadData
+   fun:cuda_newkernel
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:slot_tp_init
+   fun:type_call
+   fun:PyObject_Call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:slot_tp_call
+   fun:PyObject_Call
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:ext_do_call
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyTuple_New
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:PyMarshal_ReadObjectFromString
+   fun:PyMarshal_ReadLastObjectFromFile
+   fun:read_compiled_module
+   fun:load_source_module
+   fun:import_submodule
+   fun:load_next
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyTuple_New
+   fun:tupleconcat
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+   fun:load_next
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:function_call
+   fun:PyObject_Call
+   fun:instancemethod_call
+   fun:PyObject_Call
+   fun:slot_tp_call
+   fun:PyObject_Call
+   fun:do_call
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyObject_Realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:realloc
+   fun:_PyObject_GC_Resize
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyTuple_New
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:r_object
+   fun:PyMarshal_ReadObjectFromString
+   fun:PyMarshal_ReadLastObjectFromFile
+   fun:read_compiled_module
+   fun:load_source_module
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:_PyObject_GC_Malloc
+   fun:_PyObject_GC_NewVar
+   fun:PyFrame_New
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+}
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:malloc
+   fun:PyString_FromStringAndSize
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:fast_function
+   fun:call_function
+   fun:PyEval_EvalFrameEx
+   fun:PyEval_EvalCodeEx
+   fun:PyEval_EvalCode
+   fun:PyImport_ExecCodeModuleEx
+   fun:load_source_module
+   fun:import_submodule
+   fun:ensure_fromlist
+   fun:import_module_level
+   fun:PyImport_ImportModuleLevel
+}

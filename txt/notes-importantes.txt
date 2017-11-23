@@ -1,0 +1,34 @@
+For Microsoft Visual C++ 2008, not the general Visual Studio (go.microsoft.com/?linkid=7729279‎) 
+
+https://www.microsoft.com/en-us/download/details.aspx?id=44266
+
+NVIDIA-SMI is in: C:\Program Files\NVIDIA Corporation\NVSMI
+
+Example for SCP command to download remote file:
+	scp boccoset@elisa1.iro.umontreal.ca:mila/dev/git/theano/tests-check-dnn-conv-cudnn-v6-2017-09-05-15h-30min-14sec.log .
+
+# Maybe useful to get some infos frome theano profile
+export LC_ALL=C
+grep "max abs diff" -i tests-check-dnn-conv-cudnn-v7-2017-08-24-19h-36min-23sec.log | sort -u | sort -g -k1.18
+
+# Créer un patch à partir d'un commit
+git format-patch -1 <sha>
+
+# Appliquer le patch
+git apply file.patch
+
+# Supprimer une branche distante
+git push origin --delete <branch_name>
+
+# get tag commit
+git rev-list -n 1 $TAG
+
+########################################################################
+
+https://stackoverflow.com/a/33408382
+http://www.plflib.org/nanotimer.htm
+https://github.com/mattreecebentley/plf_nanotimer
+
+########################################################################
+# Maybe useful to use Theano with C++11 and later
+THEANO_FLAGS=cmodule.debug=True,gcc.cxxflags="-std=c++11 -D_hypot=hypot" nosetests -xvs theano/gpuarray/tests/test_dnn.py:TestDnnConv2DRuntimeAlgorithms
