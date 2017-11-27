@@ -21,10 +21,13 @@ sudo apt-get install librdmacm-dev
 
 conda install numpy wheel
 
-./configure
 bazel clean
+./configure
 bazel build --config=opt --config=cuda --cxxopt="-D_GLIBCXX_USE_CXX11_ABI=0" --verbose_failures //tensorflow/tools/pip_package:build_pip_package
 bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
+
+# for profiler
+bazel build --config=opt --config=cuda --cxxopt="-D_GLIBCXX_USE_CXX11_ABI=0" --verbose_failures tensorflow/core/profiler:profiler
 
 # Python package is in /tmp/tensorflow_pkg/ .
 pip install /tmp/tensorflow_pkg/tensorflow-1.4.0-py2-none-any.whl
