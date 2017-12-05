@@ -38,25 +38,26 @@ if __name__ == '__main__':
     parser.add_argument("--nsteps", type=int, default=1000, help='Number of training steps')
     args = parser.parse_args()
 
+    data = np.random.normal(size=(args.nbatch, args.nin)).astype(args.dtype)
+    target = np.zeros((args.nbatch, args.nout), dtype=args.dtype)
+    target[np.arange(args.nbatch), np.random.randint(0, args.nout, args.nbatch)] = 1
+
     # Create the model
-    x = tf.placeholder(args.dtype, [None, args.nin])
+    x = tf.constant(data, args.dtype, [args.nbatch, args.nin], verify_shape=True)
     W = tf.Variable(tf.zeros([args.nin, args.nout], dtype=args.dtype))
     b = tf.Variable(tf.zeros([args.nout], dtype=args.dtype))
     y = tf.matmul(x, W) + b
 
     # Define loss and optimizer
-    y_ = tf.placeholder(args.dtype, [None, args.nout])
+    y_ = tf.constant(target, args.dtype, [args.nbatch, args.nout], verify_shape=True)
     cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y_, logits=y))
     train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
 
     with tf.Session() as sess:
-        data = np.random.normal(size=(args.nbatch, args.nin)).astype(args.dtype)
-        target = np.zeros((args.nbatch, args.nout), dtype=args.dtype)
-        target[np.arange(args.nbatch), np.random.randint(0, args.nout, args.nbatch)] = 1
         sess.run(tf.global_variables_initializer())
         # Train
         for i in range(args.nsteps):
-            sess.run(train_step, feed_dict={x: data, y_: target})
+            sess.run(train_step)
             if (i + 1) % 100 == 0:
                 print("Step %d/%d" % (i + 1, args.nsteps))
     print('End')
