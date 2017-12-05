@@ -33,8 +33,6 @@ bazel build --config=opt --config=cuda --cxxopt="-D_GLIBCXX_USE_CXX11_ABI=0" --v
 pip install /tmp/tensorflow_pkg/tensorflow-1.4.0-py2-none-any.whl
 
 
-
-
 # nvprof python nv_f16_example.py --dtype float16 --nin 4096 --nbatch 4096 --nout 4096
 # - Modify le script pour tester float16 et float32 a chaque appel.
 # - sinter --mem=16000 --qos=high --gres=gpu:v100
@@ -44,3 +42,4 @@ pip install /tmp/tensorflow_pkg/tensorflow-1.4.0-py2-none-any.whl
 #   - activé docker sur kepler5, te donner les droits pour docker, apprendre docker, ...
 # sinter --reservation=<reservation_name>
 # sinter --reservation=lefransi_34
+# sinter --mem=16000 --qos=high --gres=gpu:v100 --reservation=lefransi_34
