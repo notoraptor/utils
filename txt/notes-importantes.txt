@@ -6,6 +6,8 @@ NVIDIA-SMI is in: C:\Program Files\NVIDIA Corporation\NVSMI
 
 Example for SCP command to download remote file:
 	scp boccoset@elisa1.iro.umontreal.ca:mila/dev/git/theano/tests-check-dnn-conv-cudnn-v6-2017-09-05-15h-30min-14sec.log .
+SCP exemple to send file:
+	scp file... user@host.domain:path
 
 # Maybe useful to get some infos frome theano profile
 export LC_ALL=C

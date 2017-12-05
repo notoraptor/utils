@@ -31,3 +31,16 @@ bazel build --config=opt --config=cuda --cxxopt="-D_GLIBCXX_USE_CXX11_ABI=0" --v
 
 # Python package is in /tmp/tensorflow_pkg/ .
 pip install /tmp/tensorflow_pkg/tensorflow-1.4.0-py2-none-any.whl
+
+
+
+
+# nvprof python nv_f16_example.py --dtype float16 --nin 4096 --nbatch 4096 --nout 4096
+# - Modify le script pour tester float16 et float32 a chaque appel.
+# - sinter --mem=16000 --qos=high --gres=gpu:v100
+# - http://docs.nvidia.com/deeplearning/sdk/mixed-precision-training/index.html#example_tensorflow
+# - Compile tensorflow master (J'ai testé tensorflow 1.4 from github) DOit être compiler from scratch on the computer with v100 avec cuda9 et cudnn7.
+# - Si cela ne marche pas, esseyé leur docker sur la machine v100.
+#   - activé docker sur kepler5, te donner les droits pour docker, apprendre docker, ...
+# sinter --reservation=<reservation_name>
+# sinter --reservation=lefransi_34
