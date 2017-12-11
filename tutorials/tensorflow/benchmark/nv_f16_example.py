@@ -1,3 +1,4 @@
+from __future__ import absolute_import, print_function, division
 import argparse
 import sys
 import time
@@ -45,34 +46,33 @@ def gradients_with_loss_scaling(loss, variables, loss_scale):
 
 def create_simple_model(nbatch, nin, nout, dtype, np_data, np_target):
     """A simple softmax model."""
-    data    = tf.placeholder(dtype, shape=(nbatch, nin))
-    data    = tf.constant(np_data)#, dtype, shape=(nbatch, nin))
+    data    = tf.constant(np_data, dtype=dtype) # shape=(nbatch, nin))
     weights = tf.get_variable('weights', (nin, nout), dtype)
     biases  = tf.get_variable('biases',        nout,  dtype,
                               initializer=tf.zeros_initializer())
     logits  = tf.matmul(data, weights) + biases
-    target  = tf.placeholder(tf.float32, shape=(nbatch, nout))
-    target  = tf.constant(np_target)
+    target  = tf.constant(np_target, dtype=dtype)
     # Note: The softmax should be computed in float32 precision
     loss    = tf.losses.softmax_cross_entropy(
         target, tf.cast(logits, tf.float32))
     return data, target, loss
 
-if __name__ == '__main__':
+def main(args, use_dtype=None):
     nbatch = args.nbatch
     nin    = args.nin
     nout   = args.nout
     learning_rate = 0.1
     momentum      = 0.9
     loss_scale    = 128
-    dtype = getattr(tf, args.dtype)
-    print(args)
-    print(args.dtype, args)
+    if use_dtype is None:
+        use_dtype = args.dtype
+    dtype = getattr(tf, use_dtype)
+    print(use_dtype, args)
     tf.set_random_seed(1234)
     np.random.seed(4321)
 
     np_data   = np.random.normal(size=(nbatch, nin)).astype(args.dtype)
-    np_target = np.zeros((nbatch, nout), dtype=np.float32)
+    np_target = np.zeros((nbatch, nout), dtype=args.dtype)
     np_target[:,0] = 1
 
     # Create training graph
@@ -91,16 +91,21 @@ if __name__ == '__main__':
     # Run training
     sess = tf.Session()
     sess.run(init_op)
-    print 'Step Loss'
+    print('Step Loss')
     t0 = time.time()
-    for step in xrange(30):
+    for step in range(30):
         np_loss, _ = sess.run([loss, training_step_op],)
 #                              feed_dict={data: np_data, target: np_target})
-        print '%4i %6f' % (step + 1, np_loss)
+        print('%4i %6f' % (step + 1, np_loss))
     t1 = time.time()
-    for step in xrange(30):
+    for step in range(30):
         np_loss, _ = sess.run([loss, training_step_op],)
 #                              feed_dict={data: np_data, target: np_target})
     t2 = time.time()
     print("time of 30 more run %ss" % (t1 - t0))
     print("time of 30 more run %ss" % (t2 - t1))
+
+
+for dtype in ('float16', 'float32'):
+    with tf.Graph().as_default():
+        main(args, dtype)
