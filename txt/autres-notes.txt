@@ -1,0 +1,54 @@
+git clone https://github.com/fvisin/dataset_loaders.git
+
+git clone https://github.com/notoraptor/DeepLearningTutorials.git
+
+cd dataset_loaders/
+
+pip install -e .
+
+cd ../DeepLearningTutorials/
+
+mkdir work
+
+cd work
+# /u/boccoset/mila/dev/git/work/polyps_split7
+
+conda install matplotlib numpy Pillow scipy scikit-image seaborn h5py
+
+# for unet
+# https://itk.org/Wiki/SimpleITK/GettingStarted#Python_installation
+conda install -c https://conda.anaconda.org/simpleitk SimpleITK
+THEANO_FLAGS=device=cuda,floatX=float32 python ~/mila/dev/git/DeepLearningTutorials/code/unet/train_unet.py 
+
+
+# test machine for tutorials
+Using cuDNN version 7005 on context None
+Mapped name None to device cuda: GeForce GTX TITAN X (0000:02:00.0)
+
+# run for tutoriel 1: FCN
+FINAL MODEL: err test  0.438025, acc test 0.924045jacc test class 0  0.937981, jacc test class 1 0.428401, jacc test 0.683191
+
+2904.46user 632.88system 1:15:03elapsed 78%CPU (0avgtext+0avgdata 2075564maxresident)k
+8560672inputs+174170992outputs (0major+21209381minor)pagefaults 0swaps
+
+THEANO_FLAGS=device=cuda,floatX=float32,dnn.conv.algo_fwd=time_once,dnn.conv.algo_bwd_data=time_once,dnn.conv.algo_bwd_filter=time_once time python ../DeepLearningTutorials/code/fcn_2D_segm/train_fcn8.py --num_epochs 60
+
+367
+147
+260
+
+mail -s "job done" stevenbocco@gmail.com < /dev/null
+
+nvprof python benchmark/benchmark_matmul.py --dtype float16 --dtype float32 --nbatch 4096 --nin 2048 --nout 2048 --nsteps 2000 --nruns 1 --ngpus 1 --layers 100 --layer-neurons 2048 > out1.log 2> out1.err && mail -s "job done" stevenbocco@gmail.com < /dev/null &
+
+## Do it inside the docker image.
+
+# Get GPU UUIDs.
+nvidia-smi -L
+
+# set the GPU to use.
+export CUDA_VISIBLE_DEVICES=<gpu-uuid>
+
+## Then use tensorflow ...
+# Check:
+python -c "import tensorflow as tf; s = tf.Session(config=tf.ConfigProto(log_device_placement=True))"
